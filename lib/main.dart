@@ -8,8 +8,18 @@ void main() {
               backgroundColor: Colors.brown[400],
               centerTitle: true,
             ),
-            body: const Text( "hello from body"),
+            body: const Home(),
             
           ),
   ));
+}
+
+
+class Home extends StatelessWidget {
+  const Home({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Text("hello from home widget");
+  }
 }
