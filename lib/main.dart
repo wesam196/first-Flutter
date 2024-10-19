@@ -17,9 +17,28 @@ void main() {
 
 class Home extends StatelessWidget {
   const Home({super.key});
-
+  
+  
   @override
   Widget build(BuildContext context) {
-    return const Text("hello from home widget");
+    return   Container(
+      color: Colors.green,
+      width: 300,
+      height: 300,
+      margin: EdgeInsets.all(50),
+      padding: EdgeInsets.all(50),
+      child: (
+        Text("Welcome to my flutter App",style: TextStyle(
+          color: Colors.amber,
+          fontSize: 25,
+        
+          ),
+           )
+      ),
+   
+      
+    );
   }
+
+
 }
