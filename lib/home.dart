@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
-  const Home({super.key});
-  
-  
+  const Home({super.key});  
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
@@ -12,10 +10,17 @@ class Home extends StatelessWidget {
               backgroundColor: Colors.brown[400],
               centerTitle: true,
             ),
-            body: const Text("test"),
+            body: const Content(),
             
           );
   }
+}
 
 
+class Content extends StatelessWidget {
+  const Content({super.key});  
+  @override
+  Widget build(BuildContext context) {
+    return  Text("from new method");
+  }
 }
