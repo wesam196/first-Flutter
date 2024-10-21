@@ -6,7 +6,10 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Scaffold(
             appBar: AppBar(
-              title: const Text("hello here"),
+              title: const Text("My Coffee Id", style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+              ),),
               backgroundColor: Colors.brown[400],
               centerTitle: true,
             ),
@@ -21,6 +24,22 @@ class Content extends StatelessWidget {
   const Content({super.key});  
   @override
   Widget build(BuildContext context) {
-    return  Text("from new method");
+    return  Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Container(
+                  alignment: Alignment.center,
+                  color: Colors.brown[200],
+                  padding: const EdgeInsets.all(20),
+                  child: const Text("How I like my coffee... "),
+                ),
+                Container(
+                  alignment: Alignment.center,
+                  color: Colors.brown[100],
+                  padding: const EdgeInsets.all(20),
+                  child: const Text("Coffee prefs.."),
+                )
+              ],
+    );
   }
 }
